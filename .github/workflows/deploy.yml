@@ -1,0 +1,38 @@
+name: Build and Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # - name: Install pandoc
+      #   uses: pandoc/actions/setup@v1
+      #   with:
+      #     version: 3.5
+      #
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run docs:build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: .vitepress/dist

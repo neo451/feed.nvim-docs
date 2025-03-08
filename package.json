@@ -1,0 +1,28 @@
+{
+  "name": "feed.nvim.github.io",
+  "version": "1.0.0",
+  "description": "Documentation for feed.nvim",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neo451/feed.nvim.github.io.git"
+  },
+  "keywords": [
+    "neovim",
+    "nvim"
+  ],
+  "author": "Zizhou Teng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neo451/feed.nvim.github.io/issues"
+  },
+  "homepage": "https://github.com/neo451/feed.nvim.github.io#readme",
+  "dependencies": {
+    "@types/node": "^22.10.9",
+    "vitepress": "^1.6.3"
+  }
+}
