@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import fs from "node:fs";
 
 export default async () => {
-  const files: string[] = await fs.promises.readdir("./docs_md");
+  const files: string[] = await fs.promises.readdir("./mds");
   const name_maps = {
     index: "Home",
   };
@@ -14,7 +14,7 @@ export default async () => {
     base: "/feed.nvim-docs/",
     title: "feed.nvim",
     description: "Documentation for feed.nvim",
-    srcDir: "./docs_md",
+    srcDir: "./mds",
     head: [
       // ['link', { rel: 'icon', href: '/favicon.ico' }],
       ["meta", { name: "og:title", content: "feed.nvim" }],
