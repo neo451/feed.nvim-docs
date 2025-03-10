@@ -68,7 +68,7 @@ export default async () => {
       },
     },
     sitemap: {
-      hostname: 'https://nvim-orgmode.github.io'
+      hostname: 'https://feed.nvim.github.io'
     },
     lastUpdated: true
   })
