@@ -77,7 +77,7 @@ export default async () => {
       },
     },
     sitemap: {
-      hostname: "https://neo451.github.io/feed.nvim.github.io/",
+      hostname: "https://neo451.github.io/feed.nvim-docs/",
     },
     lastUpdated: true,
   });
