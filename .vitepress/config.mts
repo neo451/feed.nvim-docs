@@ -22,15 +22,15 @@ export default async () => {
       // ['meta', { name: 'og:url', content: 'https://nvim-orgmode.github.i' }],
     ],
     themeConfig: {
-      logo: './nvim-orgmode.svg',
-      search: {
-        provider: 'algolia',
-        options: {
-          appId: 'EUVP2UF47W',
-          apiKey: '4be90be7c304081ec37a2b44bccefad5',
-          indexName: 'nvim-orgmodeio',
-        }
-      },
+      // logo: './nvim-orgmode.svg',
+      // search: {
+      //   provider: 'algolia',
+      //   options: {
+      //     appId: 'EUVP2UF47W',
+      //     apiKey: '4be90be7c304081ec37a2b44bccefad5',
+      //     indexName: 'nvim-orgmodeio',
+      //   }
+      // },
       nav: [
         { text: 'Home', link: '/' },
       ],
@@ -68,7 +68,7 @@ export default async () => {
       },
     },
     sitemap: {
-      hostname: 'https://feed.nvim.github.io'
+      hostname: 'https://neo451.github.io/feed.nvim.github.io/'
     },
     lastUpdated: true
   })
